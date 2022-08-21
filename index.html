@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="description" content="This is where your description goes">
+  <meta name="keywords" content="one, two, three">
+
+  <title>NASA APOD</title>
+
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/cursor.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-
+  <div id="ball"> </div>
   <nav id="menu">
+    <ul class="nav-items">
+      <li class="nav-item"><input type="date" class="accent"> </li>
+      <li class="nav-item"> <button id="button" href="" class="accent">Search</button> </li>
+      <li class="nav-item">
+        <label for="toggle">description</label>
+        <input type="checkbox" id="toggle">
+        <aside class="sliding-panel">
+          <div class="back-toggle">
+          </div>
+          <div class="info">
+            <h5 id="title"></h5>
+            <span id="author"></span>
+            <p id="des">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium aliquid totam nam esse inventore,
+              ea ipsa sint facilis modi eum.</p>
+          </div>
 
-    <section class="nav-items">
-      <div class="nav-item"><input type="date" class="accent"> </div>
-      <div class="nav-item"> <button id="button" href="" class="accent" >Search</button> </div>
-      <div class="nav-item"> <label for="toggle">description</label>
-      <input type="checkbox" id="toggle">
-      <aside class="sliding-panel">
-        <div class="back-toggle">
-        </div>
-        <div class="info">
-          <p id="des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium aliquid totam nam esse inventore, ea ipsa sint facilis modi eum.</p>
-       
-        </div>
-      </aside> </div>
-      <div class="nav-item"> Author </div>
-    </section>
-<!-- 7/03/2022 and 8/6/22  and 8/12/22-->
-    <!-- <div id="back-pattern"></div> -->
+        </aside>
+      </li>
+      <li class="nav-item"> <button class="audio"></button></li>
+    </ul>
     <section id="back-image"></section>
-     <iframe src="" frameborder="0"></iframe>
+
+    <iframe src="" frameborder="0"></iframe>
   </nav>
-  
+  <video id="back-video" type="video/mp4" autoplay muted src="./img/pexels-best-stock-7094565-3.mp4"
+    frameborder="0"></video>
+
+
+
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
-<script src="./js/main.js"></script>
+
 </html>

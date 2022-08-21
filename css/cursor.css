@@ -1,0 +1,74 @@
+#ball {
+  height: 20px;
+  width: 20px;
+  background: rgb(255, 255, 254);  
+  border-radius: 100%;
+  position: fixed;
+
+
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+
+  pointer-events: none;
+
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+body:hover > #ball {
+  opacity: 1;
+}
+
+
+.expend {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: expendAnim 0.5s;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.expend::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  margin-top: -30px;
+  margin-left: -30px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+  animation: expendAnim2 0.5s;
+}
+
+
+@keyframes expendAnim {
+  from {
+    opacity: 1;
+    border-radius: 50%;
+  }
+
+  to {
+    border-radius: 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes expendAnim2 {
+  from {
+    transform: scale(0.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
