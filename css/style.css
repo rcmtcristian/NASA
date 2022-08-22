@@ -168,7 +168,7 @@ li {
 
   object-fit: cover !important;
   opacity: 0.8;
-
+  
 }
 
 iframe {
@@ -183,7 +183,7 @@ iframe {
     background-size 800ms ease,
     background-position 800ms ease;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .nav-items:hover~#back-image {
